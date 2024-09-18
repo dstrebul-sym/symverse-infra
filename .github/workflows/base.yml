@@ -1,0 +1,8 @@
+on: [workflow_call]
+        
+jobs:
+  echo:
+    runs-on: symverse-deploy
+    steps:
+      - name: Base run test
+        run: echo 'base workflow'
