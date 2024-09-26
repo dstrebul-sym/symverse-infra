@@ -1,0 +1,8 @@
+on:
+  workflow_dispatch:
+jobs:
+  printResult:
+    runs-on: symverse-deployment
+    steps:
+      - run: |
+         echo "Service: ${{ github.event.inputs.service }}"
