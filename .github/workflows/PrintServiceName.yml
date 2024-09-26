@@ -1,5 +1,9 @@
 on:
   workflow_dispatch:
+    inputs:
+      service:
+        description: 'Service name to be deployed'     
+        required: true
 jobs:
   printResult:
     runs-on: symverse-deployment
