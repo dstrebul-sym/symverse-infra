@@ -16,4 +16,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: |
-         echo "Service from dispatch: ${{ github.event.inputs.service }}. Service from call ${{ inputs.service }}"
+         echo "Service name: ${{ inputs.service }}"
