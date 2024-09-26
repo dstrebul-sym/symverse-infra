@@ -6,7 +6,7 @@ on:
         required: true
 jobs:
   printResult:
-    runs-on: symverse-deployment
+    runs-on: symverse-deploy
     steps:
       - run: |
          echo "Service: ${{ github.event.inputs.service }}"
