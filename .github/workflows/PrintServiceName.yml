@@ -1,9 +1,11 @@
 on:
   workflow_dispatch:
+  workflow_call:
     inputs:
       service:
         description: 'Service name to be deployed'     
         required: true
+        type: string
 jobs:
   printResult:
     runs-on: ubuntu-latest
