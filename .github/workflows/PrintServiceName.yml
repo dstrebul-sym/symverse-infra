@@ -17,3 +17,10 @@ jobs:
     steps:
       - run: |
          echo "Service name: ${{ inputs.service }}"
+  printResult2:
+    runs-on: ubuntu-latest
+    steps:
+      - run: |
+         echo "Service name: ${{ inputs.service }}"
+         container:
+           image: proget.repo.symbotic.corp/dev_images/library/symverse-deploy:v2.1.2
